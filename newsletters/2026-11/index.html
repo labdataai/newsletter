@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noviembre 2026 – Newsletter Laboratorio de Ciencia de Datos e IA</title>
+<meta name="description" content="Archivo de los newsletters mensuales del Laboratorio de Ciencia de Datos e Inteligencia Artificial de la Facultad de Ingeniería y Ciencias Agrarias de la UCA.">
+<link rel="icon" href="../../assets/logo-uca.png">
+<style>
+:root{
+  --azul:#002B58; --verde:#97BF29; --verde-osc:#3F6212; --verde-claro:#DEFFB8;
+  --fondo:#EEF3E7; --superficie:#FFFFFF; --tarjeta:#F4F7EF; --texto:#1E2833;
+  --muted:#4A5764; --link:#1757B8; --linea:#D9E2D2; --titulo:#002B58;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --fondo:#0E1822; --superficie:#13202D; --tarjeta:#1B2B3C; --texto:#E6EDF4;
+    --muted:#B5C2CF; --link:#8CCBF2; --linea:#2E3E4F; --titulo:#FFFFFF;
+    --verde-osc:#B9DA6A; --verde-claro:#22381A; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --fondo:#0E1822; --superficie:#13202D; --tarjeta:#1B2B3C; --texto:#E6EDF4;
+  --muted:#B5C2CF; --link:#8CCBF2; --linea:#2E3E4F; --titulo:#FFFFFF;
+  --verde-osc:#B9DA6A; --verde-claro:#22381A; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--texto);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.55}
+a{color:var(--link)}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:Georgia,'Times New Roman',Times,serif;font-weight:bold;color:var(--titulo);margin:0}
+
+/* Encabezado: siempre blanco para que los logos se lean bien */
+.top{background:#FFFFFF}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.top .lab{height:64px;width:auto;display:block}
+.top .uca{height:58px;width:auto;display:block}
+.franja{height:6px;background:var(--verde)}
+
+.hero{background:var(--azul);color:#FFFFFF}
+.hero .wrap{padding-top:48px;padding-bottom:52px}
+.kicker{margin:0 0 10px;color:var(--verde);font-weight:bold;letter-spacing:.06em;text-transform:uppercase;font-size:14px}
+.hero h1{color:#FFFFFF;font-size:clamp(28px,5vw,40px);line-height:1.18;max-width:20ch}
+.hero p.bajada{margin:16px 0 0;color:#DCE4EC;font-size:17px;max-width:60ch}
+
+main{background:var(--superficie)}
+main .wrap{padding-top:44px;padding-bottom:48px}
+.barrita{width:44px;height:4px;background:var(--verde);margin-bottom:12px}
+h2{font-size:26px;line-height:1.25}
+.intro-sec{margin:8px 0 24px;color:var(--muted);font-size:15px}
+
+.ediciones{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.ed{background:var(--tarjeta);border-left:5px solid var(--verde);padding:22px 24px}
+.ed.nueva{background:var(--verde-claro)}
+.ed .fecha{margin:0;color:var(--verde-osc);font-weight:bold;font-size:15px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.chip{display:inline-block;background:var(--azul);color:#FFFFFF;font-size:12px;line-height:1;padding:6px 10px;letter-spacing:.04em;text-transform:uppercase}
+.ed h3{font-size:22px;line-height:1.25;margin-top:6px}
+.ed p.res{margin:8px 0 0;font-size:15px}
+.btn{display:inline-block;margin-top:16px;background:var(--azul);color:#FFFFFF;font-weight:bold;font-size:15px;text-decoration:none;padding:12px 24px}
+.btn:hover,.btn:focus-visible{background:#0B3D73}
+.btn.sec{background:transparent;color:var(--titulo);border:2px solid var(--titulo);padding:10px 22px}
+
+.redes{background:var(--azul);color:#FFFFFF}
+.redes .wrap{padding-top:40px;padding-bottom:40px}
+.redes h2{color:#FFFFFF}
+.redes p{color:#DCE4EC;margin:10px 0 20px;max-width:60ch}
+.botones{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.botones a{display:block;background:var(--verde);color:#002B58;text-align:center;font-weight:bold;text-decoration:none;padding:13px 12px}
+.botones a:hover,.botones a:focus-visible{background:#A9D13A}
+
+footer{background:var(--superficie);border-top:1px solid var(--linea)}
+footer .wrap{padding-top:32px;padding-bottom:36px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
+footer img{width:120px;height:auto;display:block;background:#FFFFFF}
+footer p{margin:0 0 10px;font-size:14px;color:var(--muted)}
+footer strong{color:var(--titulo)}
+
+@media (max-width:560px){
+  .top .lab{height:46px}.top .uca{height:40px}
+  .hero .wrap{padding-top:36px;padding-bottom:40px}
+  .ed{padding:20px 18px}
+  footer .wrap{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <img class="lab" src="../../assets/logo-laboratorio.png" alt="Laboratorio de Ciencia de Datos e Inteligencia Artificial UCA" width="480" height="148">
+    <img class="uca" src="../../assets/logo-uca.png" alt="UCA – Facultad de Ingeniería y Ciencias Agrarias" width="157" height="107">
+  </div>
+</header>
+<div class="franja"></div>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker">Noviembre 2026</p>
+    <h1>Edición en preparación</h1>
+    <p class="bajada">Estamos terminando de armar el newsletter de noviembre. Muy pronto vas a poder leerlo acá.</p>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+    <div class="barrita"></div>
+    <h2>Mientras tanto</h2>
+    <p class="intro-sec">Podés leer la edición anterior o seguirnos en redes para enterarte primero de las próximas actividades.</p>
+    <a class="btn" href="../2026-10/">Leer la edición de octubre</a>
+    &nbsp; <a class="btn sec" href="../../">Volver al archivo</a>
+  </div>
+</main>
+<section class="redes">
+  <div class="wrap">
+    <h2>Seguí al laboratorio</h2>
+    <p>Sumate a una comunidad que aprende, investiga y comparte conocimiento sobre ciencia de datos e IA.</p>
+    <div class="botones">
+      <a href="https://www.linkedin.com/company/fica-uca" target="_blank" rel="noopener">Seguinos en LinkedIn</a>
+      <a href="https://www.instagram.com/datos.uca/" target="_blank" rel="noopener">Seguinos en Instagram</a>
+      <a href="https://uca.edu.ar/es/facultad-de-ingenieria-y-ciencias-agrarias/laboratorios/lab-de-datos-e-ia" target="_blank" rel="noopener">Visitá el sitio web</a>
+      <a href="mailto:lab_data_ai@uca.edu.ar">Escribinos por correo</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="../../assets/logo-uca-pie.png" alt="UCA – Facultad de Ingeniería y Ciencias Agrarias" width="130" height="88">
+    <div>
+      <p><strong>Laboratorio de Ciencia de Datos e Inteligencia Artificial</strong><br>
+      Facultad de Ingeniería y Ciencias Agrarias · Pontificia Universidad Católica Argentina<br>
+      Campus Papa Francisco, Edificio Santo Tomás Moro · Av. Alicia Moreau de Justo 1400 (C1107AAZ), C.A.B.A.</p>
+      <p>Correo: <a href="mailto:lab_data_ai@uca.edu.ar">lab_data_ai@uca.edu.ar</a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
