@@ -1,35 +1,35 @@
 # Newsletter | Laboratorio de Ciencia de Datos e IA – UCA
 
-Archivo web de los newsletters mensuales del Laboratorio (GitHub Pages).
+Archivo web del newsletter mensual del **Laboratorio de Ciencia de Datos e Inteligencia Artificial** de la Facultad de Ingeniería y Ciencias Agrarias (FICA) de la Pontificia Universidad Católica Argentina.
 
-## Estructura
+**Leé todas las ediciones en:** [URL DEL SITIO]
 
-```
-index.html                  ← landing con la lista de ediciones
-assets/                     ← logos de la landing
-newsletters/
-  2026-10/index.html        ← edición de octubre (+ carpeta imagenes/)
-  2026-11/index.html        ← página "en preparación" (reemplazar cuando esté lista)
-.nojekyll                   ← evita que GitHub procese el sitio con Jekyll
-```
+## Sobre el Laboratorio
 
-## Publicar por primera vez
+Somos un espacio de la FICA–UCA, integrado por docentes y estudiantes, que forma, investiga y genera vínculos a partir de la ciencia de datos y la inteligencia artificial.
 
-1. Crear un repositorio en GitHub (por ejemplo `newsletter-lab-uca`), público.
-2. Subir **el contenido** de esta carpeta a la raíz del repositorio (Add file → Upload files).
-3. En el repositorio: **Settings → Pages → Build and deployment → Source: Deploy from a branch**,
-   rama `main`, carpeta `/ (root)` → Save.
-4. En 1–2 minutos el sitio queda en `https://<usuario>.github.io/newsletter-lab-uca/`.
+Cada mes, el newsletter reúne las próximas actividades del Laboratorio (talleres, encuentros abiertos y participación en congresos) y lo que compartimos de las últimas que hicimos.
 
-## Publicar la edición de noviembre (y las siguientes)
+## Ediciones
 
-1. Tomar la versión **editable** del newsletter (la que usa una carpeta de imágenes, no la autónoma en base64).
-2. Copiarla como `newsletters/2026-11/index.html` (reemplaza la página "en preparación").
-3. Copiar las imágenes en `newsletters/2026-11/imagenes/` y cambiar en el HTML
-   `imagenes-newsletter-noviembre/` por `imagenes/`.
-4. (Opcional) Pegar arriba del preheader la barra "← Volver al archivo" que tiene la edición de octubre.
-5. En `index.html`: sacar el chip "En preparación" y la clase `nueva` de noviembre, y cambiar el botón a
-   `class="btn"` con el texto "Leer edición".
-6. Para un mes nuevo: crear `newsletters/AAAA-MM/` y copiar un bloque `<li>` arriba de todo en `index.html`.
+| Edición | Estado |
+|---|---|
+| [Noviembre 2026](newsletters/2026-11/) | En preparación |
+| [Octubre 2026](newsletters/2026-10/) | Publicada |
 
-Las rutas son relativas, así que el sitio funciona igual abriéndolo local o publicado.
+## Seguí al Laboratorio
+
+- Sitio web: [uca.edu.ar – Lab de Datos e IA](https://uca.edu.ar/es/facultad-de-ingenieria-y-ciencias-agrarias/laboratorios/lab-de-datos-e-ia)
+- LinkedIn: [FICA UCA](https://www.linkedin.com/company/fica-uca)
+- Instagram: [@datos.uca](https://www.instagram.com/datos.uca/)
+- Correo: [lab_data_ai@uca.edu.ar](mailto:lab_data_ai@uca.edu.ar)
+
+Si querés recibir el newsletter por correo, escribinos a lab_data_ai@uca.edu.ar.
+
+## Licencia
+
+Los textos se publican bajo licencia [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es). Los logos, las marcas y las fotografías están excluidos de esta licencia. Más detalles en [LICENSE](LICENSE).
+
+---
+
+Campus Papa Francisco, Edificio Santo Tomás Moro · Av. Alicia Moreau de Justo 1400 (C1107AAZ), C.A.B.A.
